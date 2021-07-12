@@ -1,0 +1,35 @@
+Given weight and values of items, put these items in knapsack of capacity W to get
+maximum profit, max total value in knapsack
+
+Identify the problem:
+1. We have given choice to pich the items
+2. require Optimal solution 
+
+This problem can be solve using DP. DP is recursion + storage
+When we identify that the problem belongs to DP. Then write recursive solution -> 
+then memoization and then top-down approach.
+
+
+Base condition: Think of smallest valid input
+when there is no item, max profit will be 0. when knapsack capacity is 0, max profit is 0.
+so, if n == 0 or W == 0:
+        return 0
+
+Make choice diagram:
+            item weight w1
+            /              \
+        w1 <= W            w1 > We
+        /       \                \
+  select it   reject it        reject it
+
+
+We start with the last item in given arrays
+Solution approach:
+
+def func(wt, val, W, n):
+    Base Condition
+
+    Choice Diagram
+
+
+Recursive, memoization and top-dowm approach, all solutions are discussed in seperate files.
